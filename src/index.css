@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-project-gray: rgb(64, 65, 66);
+  --color-project-red: rgb(151, 4, 30);
+  --color-project-gray-foreground: rgb(109, 110, 112);
+}
