@@ -2,6 +2,10 @@ import heroImage from "../assets/hero.jpeg";
 import Button from "./Button";
 
 function Hero() {
+  const scrollToContact = () => {
+    document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative -mt-20 h-screen w-full overflow-hidden md:-mt-24">
       {/* background image */}
@@ -24,11 +28,7 @@ function Hero() {
               {/* buttons */}
               <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
                 <Button
-                  onClick={() =>
-                    document
-                      .getElementById("footer")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={scrollToContact}
                   color="gray"
                   className="text-base md:text-lg"
                 >
