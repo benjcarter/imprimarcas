@@ -43,7 +43,7 @@ function Section({
           {title}
         </h2>
 
-        <hr className="border-project-gray w-60 border-2" />
+        <hr className="border-project-gray-foreground w-60 border-2" />
 
         <p className="text-project-gray-foreground max-w-4xl text-center whitespace-pre-line">
           {content}

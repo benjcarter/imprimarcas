@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
@@ -122,7 +123,7 @@ function App() {
               <strong className="text-project-gray">Lealtad</strong>: realmente
               valoramos las relaciones y las cuidamos
               <br />
-              <strong className="text-project-gray">Respecto</strong>:
+              <strong className="text-project-gray">Respeto</strong>:
               reconocemos los límites.
               <br />
               <strong className="text-project-gray">Confianza</strong>: Nuestros
@@ -137,7 +138,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer id="footer"></footer>
+      <Footer />
     </>
   );
 }
