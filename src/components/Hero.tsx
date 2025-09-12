@@ -6,6 +6,14 @@ function Hero() {
     document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const openCatalog = () => {
+    window.open(
+      "/CATALOGO_Imprimarcas_2025_v02.pdf",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <section className="relative -mt-20 h-screen w-full overflow-hidden md:-mt-24">
       {/* background image */}
@@ -36,7 +44,7 @@ function Hero() {
                 </Button>
                 <Button
                   // push to catalog pdf
-                  onClick={() => {}}
+                  onClick={openCatalog}
                   color="red"
                   className="text-base md:text-lg"
                 >

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+CATALOGO_Imprimarcas_2025_v02.pdf
