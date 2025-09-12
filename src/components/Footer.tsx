@@ -39,7 +39,7 @@ function Footer() {
             </li>
             <li className="ease-out md:transition-transform md:duration-300 md:hover:scale-115">
               <SocialIcon
-                url="https://www.instagram.com/imprimarcassoluciones"
+                url="https://www.instagram.com/imprimarcashn"
                 target="_blank"
                 bgColor="transparent"
                 fgColor="#ffffff"
