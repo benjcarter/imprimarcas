@@ -1,8 +1,9 @@
 import { cn } from "../lib/utils";
-import heroImage from "../assets/hero.jpeg";
 
 interface SectionProps {
   imageOrientation: "left" | "right" | "none";
+  image?: string;
+  imageAlt?: string;
   title: string;
   content: React.ReactNode;
   titleColor: "red" | "gray";
@@ -12,7 +13,9 @@ function Section({
   title,
   content,
   titleColor,
-  imageOrientation
+  imageOrientation,
+  image,
+  imageAlt
 }: SectionProps) {
   return (
     <section
@@ -27,7 +30,12 @@ function Section({
             "order-1!": imageOrientation === "right"
           })}
         >
-          <img src={heroImage} className="object-contain" />
+          <img
+            loading="lazy"
+            src={image}
+            alt={imageAlt}
+            className="object-contain"
+          />
         </div>
       )}
 

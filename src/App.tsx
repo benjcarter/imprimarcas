@@ -2,6 +2,9 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
+import missionImage from "./assets/mission.jpg";
+import visionImage from "./assets/vision.jpg";
+import valuesImage from "./assets/values.jpg";
 
 function App() {
   return (
@@ -42,6 +45,8 @@ function App() {
         {/* Mission Section */}
         <Section
           imageOrientation="left"
+          image={missionImage}
+          imageAlt="Impresión directa en cualquier material"
           title="Misión"
           content={
             <>
@@ -67,6 +72,8 @@ function App() {
         {/* Vision Section */}
         <Section
           imageOrientation="right"
+          image={visionImage}
+          imageAlt="Vallas publicitarias de productos"
           title="Visión"
           content={
             <>
@@ -87,6 +94,8 @@ function App() {
         {/* Values Section */}
         <Section
           imageOrientation="left"
+          image={valuesImage}
+          imageAlt="Persona instalando una valla publicitaria"
           title="Valores"
           content={
             <>
