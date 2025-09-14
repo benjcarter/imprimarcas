@@ -6,6 +6,8 @@ import missionImage from "./assets/mission.jpg";
 import visionImage from "./assets/vision.jpg";
 import valuesImage from "./assets/values.jpg";
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 function App() {
   return (
     <>
@@ -148,6 +150,8 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+      <SpeedInsights />
     </>
   );
 }
