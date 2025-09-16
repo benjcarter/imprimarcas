@@ -8,7 +8,7 @@ function Hero() {
 
   const openCatalog = () => {
     window.open(
-      "/CATALOGO_Imprimarcas_2025_v02.pdf",
+      "/CATALOGO_Imprimarcas_2025_v03.pdf",
       "_blank",
       "noopener,noreferrer"
     );
